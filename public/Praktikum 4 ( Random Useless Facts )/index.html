@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Useless Facts</title>
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom right, #eef3ff, #dde8ff);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+    }
+    .container {
+        text-align: center;
+        width: 100%;
+    }
+    h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+    .card {
+        background: white;
+        padding: 45px;
+        border-radius: 25px;
+        width: 350px;
+        margin: 0 auto;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+    .fact {
+        font-size: 20px;
+        margin-bottom: 35px;
+        line-height: 1.5;
+    }
+    button {
+        background: linear-gradient(to right, #4f8bfd, #3975ff);
+        color: white;
+        border: none;
+        padding: 16px 26px;
+        font-size: 17px;
+        border-radius: 12px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 0 auto;
+        font-weight: 500;
+    }
+    button:hover {
+        background: #2563eb;
+    }
+    .icon {
+        font-size: 20px;
+    }
+
+    @media (max-width: 768px) {
+            h1 {
+        font-size: 32px;
+        gap: 10px;
+        }
+            .card {
+        width: 90%;
+        padding: 35px 25px;
+        }
+            .fact {
+        font-size: 18px;
+        }
+            button {
+        width: 100%;
+        font-size: 16px;
+        padding: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+            h1 {
+        font-size: 26px;
+        }
+            .card {
+        padding: 25px 20px;
+        border-radius: 18px;
+        }
+            .fact {
+        font-size: 16px;
+        }
+            button {
+        font-size: 15px;
+        padding: 14px;
+        border-radius: 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>🤪 Random Useless Facts</h1>
+        <div class="card">
+        <div id="fact" class="fact">Scotland's national animal is the unicorn.</div>
+        <button onclick="generateFact()">
+        <span class="icon">🔄</span> Get Another Random Fact
+        </button>
+        </div>
+    </div>
+
+    <script>
+    const facts = [
+        "Bananas are berries, but strawberries aren't.",
+        "Honey never spoils.",
+        "Octopuses have three hearts.",
+        "A snail can sleep for three years.",
+        "Cows have best friends.",
+        "Scotland's national animal is the unicorn.",
+        "Cats can't taste sweetness.",
+        "The Eiffel Tower can grow taller in summer.",
+        "An apple floats because it's 25% air.",
+        "Sharks existed before trees."
+    ];
+
+    function generateFact() {
+      const randomIndex = Math.floor(Math.random() * facts.length);
+        document.getElementById("fact").innerText = facts[randomIndex];
+    }
+    </script>
+</body>
+</html>

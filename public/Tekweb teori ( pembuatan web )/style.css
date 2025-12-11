@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #f3f4f6, #e2e8f0);
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #0f172a, #1e293b);
+    color: #f8fafc;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #f8fafc;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.7);
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+section {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 25px;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+section h2 {
+    color: #0f172a;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+}
+
+p, li {
+    font-size: 1rem;
+    color: #334155;
+}
+
+ul {
+    list-style: square;
+    margin-left: 25px;
+}
+
+a {
+    color: #0ea5e9;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #0284c7;
+    text-decoration: underline;
+}
+
+#portofolio ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+}
+
+#portofolio li {
+    background: #f8fafc;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#portofolio li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(56, 189, 248, 0.3);
+}
+
+footer {
+    background: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
