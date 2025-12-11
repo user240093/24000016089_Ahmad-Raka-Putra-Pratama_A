@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="controls">
+    <select id="colorSelector">
+        <option value="">-- Pilih Warna --</option>
+        <option value="white">Putih</option>
+        <option value="#d3d3d3">Abu Terang</option>
+        <option value="#add8e6">Biru Muda</option>
+        <option value="#90ee90">Hijau Muda</option>
+        <option value="#f5f5dc">Krem</option>
+        <option value="#ffebcd">Coklat Lembut</option>
+        <option value="#ffe4e1">Merah Muda</option>
+    </select>
+
+    <button id="increaseFont">Increase Font Size</button>
+    <button id="decreaseFont">Decrease Font Size</button>
+    <button id="toggleDark">Toogle Dark Mode</button>
+
+    <select id="fontSelector">
+        <option value="Verdana">Verdana</option>
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Courier New">Courier New</option>
+    </select>
+    </div>
+
+    <h1>My To-Do List</h1>
+
+    <div class="input-area">
+    <input type="text" id="taskInput" placeholder="Tambah tugas baru..." />
+    <button id="addBtn">Tambah</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <script src="dom.js"></script>
+</body>
+</html>
